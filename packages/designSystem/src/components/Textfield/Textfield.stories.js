@@ -25,11 +25,6 @@ storiesOf('Textfield', module)
         placeholder="Put text in here" 
         variant="new"
       />`,
-    methods: { 
-      input: action('change'), 
-      enter: action('enter'), 
-      blur: action('blur') 
-    }
   }))
   .add('Edit', () => ({
     components: { myTextfield },
@@ -41,10 +36,5 @@ storiesOf('Textfield', module)
         placeholder="Put text in here" 
         variant="edit"
       />`,
-    methods: { 
-      input: action('change'), 
-      enter: action('enter'), 
-      blur: action('blur') 
-    }
   }))
   ;
