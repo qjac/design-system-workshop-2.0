@@ -19,9 +19,6 @@ storiesOf('Textfield', module)
     components: { myTextfield },
     template: `
       <my-textfield 
-        @input="input" 
-        @enter="enter" 
-        @blur="blur" 
         placeholder="Put text in here" 
         variant="new"
       />`,
@@ -30,9 +27,6 @@ storiesOf('Textfield', module)
     components: { myTextfield },
     template: `
       <my-textfield 
-        @input="input" 
-        @enter="enter" 
-        @blur="blur" 
         placeholder="Put text in here" 
         variant="edit"
       />`,
