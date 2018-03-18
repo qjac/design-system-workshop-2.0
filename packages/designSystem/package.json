@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "screener": "screener-storybook --conf screener.config.js --debug",
     "scaffold": "yo .yeoman/",
-    "sassdoc": "sassdoc ./src --theme herman",
+    "sassdoc": "sassdoc ./src",
     "build": ""
   },
   "author": "",
