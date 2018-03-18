@@ -17,19 +17,7 @@ import myButton from "./Button.vue";
 
 storiesOf("Button", module)
   .addDecorator(withKnobs)
-  .addDecorator((storyFn) => {
-    const story = storyFn();
-    story.steps = new Steps()
-      .snapshot('default', { cropTo: '.Button' })
-      .hover('.Button')
-      .snapshot('hover', { cropTo: '.Button' })
-      .mouseDown('.Button')
-      .snapshot('pressed', { cropTo: '.Button' })
-      .end()
-    return story;
-  })
   .add("Default", () => ({
     components: { myButton },
-    template: `<my-button @click="click"> ${text( "Text", "Button")} </my-button>`,
-    methods: { click: action("clicked") }
+    template: `<my-button> Button </my-button>`
   }));
