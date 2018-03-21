@@ -7,7 +7,7 @@
     @input="$emit(`input`, $event.target.value)"
     @keyup.enter="$emit(`enter`)"
     @blur="$emit(`blur`)"
-  >
+  />
 </template>
 
 <script>
