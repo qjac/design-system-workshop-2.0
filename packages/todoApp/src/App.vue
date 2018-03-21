@@ -3,7 +3,13 @@
     
       <my-title>Todo App</my-title>
       <header>
-        <input />
+        <my-textfield 
+          variant="new" 
+          placeholder="Enter Todo"
+          :value="newTodo"
+          @input="(value) => { newTodo = value }"
+          @enter="addTodo"
+        />
       </header>
 
       <main  v-show="todos.length" v-cloak>
@@ -24,13 +30,15 @@
 import myShell from 'design-system/src/components/Shell/Shell.vue';
 import myLink from 'design-system/src/components/Link/Link.vue';
 import myTitle from 'design-system/src/components/Title/Title.vue';
+import myTextfield from 'design-system/src/components/Textfield/Textfield.vue';
 
 export default {
   name: "app",
   components: {
     myShell,
     myLink,
-    myTitle
+    myTitle,
+    myTextfield
   },
   data: function() {
     return {
