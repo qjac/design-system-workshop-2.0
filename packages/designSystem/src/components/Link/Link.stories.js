@@ -17,5 +17,5 @@ storiesOf("Link", module)
   .addDecorator(withKnobs)
   .add("Default", () => ({
     components: { myLink },
-    template: `<my-link href="#">Click Me</my-link>`
+    template: `<my-link href="http://foo.com">this goes in the slot</my-link>`
   }));
