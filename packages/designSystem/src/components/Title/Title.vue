@@ -1,10 +1,11 @@
 <template>
-  <a class="Link" :href="href"> <slot/> </a>
+  <h1 class="Title"> <slot/> </h1>
 </template>
 
 <script>
 export default {
-  props: ["href"]
+  components:{},
+  props: []
 };
 </script>
 
@@ -12,6 +13,8 @@ export default {
 @import "../../utilities/utilities";
 
 .Title {
-  color: get-color(secondary);
+  color: get-color(primary, 0);
+  font-size: get-size(4);
+  text-align: center;
 }
 </style>

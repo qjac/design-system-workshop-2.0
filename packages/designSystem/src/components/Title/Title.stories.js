@@ -11,11 +11,11 @@ import {
   date
 } from "@storybook/addon-knobs";
 
-import myLink from "./Link.vue";
+import myTitle from "./Title.vue";
 
-storiesOf("Link", module)
+storiesOf("Title", module)
   .addDecorator(withKnobs)
   .add("Default", () => ({
-    components: { myLink },
-    template: `<my-link href="http://foo.com">this goes in the</my-link>`
+    components: { myTitle },
+    template: `<my-title>Sample Title</my-title>`
   }));
